@@ -1,5 +1,7 @@
 # Telegram lyrics generator (Voluspa)
-A tiny pet project of making a neural network work in Telegram.
+A small project of making a Telegram chat service on the basis of a neural network 
+that was trained on Manowar lyrics to produce 'predictions' in tune with the questions.
+
 Original concept is borrowed from: https://github.com/dlebech/lyrics-generator/
 
 Actions taken and features introduced in this project:
@@ -14,16 +16,16 @@ The choice of the bot's name was informed by the specifically elevated style of 
 Voluspa lives here: http://t.me/MN_o_WR_bot
 
 # Feed preparation
-The source webpage doesn't let fetch all the 137 texts and blocks the requests after 99 successful answers.
-All non-English texts are wiped from the data set.
+The source webpage doesn't let fetch all the 137 texts and blocks requests after 99 successful answers.
+All non-English texts are removed from the data set.
 To cook your own feed and make it digestible for the model you may wish to follow the recipe:
-  1. The code expects an input dataset to be stored as `date/songdata.csv` by default. Alternatively, you can name it anything you like and use the `--songdata-file` parameter when training.
+  1. The code expects an input dataset to be stored as `data/songdata.csv` by default. Alternatively, you can name it anything you like and use the `--songdata-file` parameter when training.
   2. The file should be in CSV format with the following columns (case sensitive):
      - `artist`(A string, e.g. "The Beatles")
      - `text`(A string with the entire lyrics for one song, including newlines)
 
 # Embeddings
-- Download `glove.6B.50d.txt` file from:http://nlp.stanford.edu/data/glove.6B.zipin and put in subdirectory `data/`.
+- Download `glove.6B.50d.txt` file from:http://nlp.stanford.edu/data/glove.6B.zipin and put it in the subdirectory `data/`.
 - Or create your own embedding: make `songdata.csv` file from above and then run:
 ```shell
 python -m lyrics.embedding --name-suffix _myembedding
