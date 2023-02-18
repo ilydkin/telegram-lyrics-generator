@@ -1,6 +1,6 @@
 # Telegram lyrics generator (Voluspa)
 A small project of making a Telegram chat service on the basis of a neural network 
-that was trained on Manowar lyrics to produce 'predictions' in tune with the questions.
+that was trained on Manowar lyrics to produce 'predictions' in accord with the questions asked
 
 Original concept is borrowed from: https://github.com/dlebech/lyrics-generator/
 
