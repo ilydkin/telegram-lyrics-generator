@@ -1,4 +1,5 @@
 # 2023.02_Telegram lyrics generator (Voluspa)
+![A beautiful AI Lady should be here](https://user-images.githubusercontent.com/115424463/266305457-0d3d78cc-6fda-4816-b645-8ae4e46da1f2.jpeg)
 A small project of making a Telegram chat service on the basis of a neural network 
 that was trained on Manowar lyrics to produce 'predictions' in accord with the questions asked
 
