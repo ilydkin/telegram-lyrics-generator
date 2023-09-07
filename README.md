@@ -1,9 +1,10 @@
 # 2023.02_Telegram lyrics generator (Voluspa)
-![A beautiful AI Lady should be here](https://user-images.githubusercontent.com/115424463/266305457-0d3d78cc-6fda-4816-b645-8ae4e46da1f2.jpeg)
+<img src="https://user-images.githubusercontent.com/115424463/266305457-0d3d78cc-6fda-4816-b645-8ae4e46da1f2.jpeg" width="400" height="225">
+
 A small project of making a Telegram chat service on the basis of a neural network 
 that was trained on Manowar lyrics to produce 'predictions' in accord with the questions asked
 
-Original concept is borrowed from: https://github.com/dlebech/lyrics-generator/
+The original concept is borrowed from: https://github.com/dlebech/lyrics-generator/
 
 Actions taken and features introduced in this project:
  - Preparation of feed for a model on the basis of Manowar songs, fetched from https://www.azlyrics.com/
